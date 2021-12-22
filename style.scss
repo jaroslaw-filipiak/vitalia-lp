@@ -1,0 +1,202 @@
+@font-face {
+  font-family: Geomanist;
+  src: url(/fonts/geomanist-light-webfont.otf);
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Geomanist;
+  src: url(/fonts/geomanist-regular-webfont.otf);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Geomanist;
+  src: url(/fonts/geomanist-book-webfont.otf);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Geomanist;
+  src: url(/fonts/geomanist-bold-webfont.otf);
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  font-family: Geomanist !important;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 41px !important;
+  font-weight: bold !important;
+}
+
+h2 {
+  font-size: 30px !important;
+  font-weight: 300 !important;
+}
+
+h3 {
+  font-size: 30px !important;
+  font-weight: 400 !important;
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 882px,
+  xl: 1140px,
+  xxl: 1266px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 882px,
+  xl: 883px,
+  xxl: 884px,
+);
+
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.bg-purple {
+  background-color: #c74494;
+}
+
+.bg-green {
+  background-color: #bbe138;
+}
+
+.color-green {
+  color: #bbe138;
+}
+
+.color-purple {
+  color: #c74494;
+}
+
+.btn-rounded {
+  border-radius: 50px;
+}
+
+.btn-qczaj {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 14px 33px !important;
+  &-white {
+    background-color: #fff;
+    color: #c74494;
+    &:hover {
+      color: #c74494;
+    }
+  }
+  &-purple {
+    background-color: #c74494;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      opacity: 0.8;
+    }
+  }
+}
+
+.qczaj-logo-wrapper {
+  padding: 20px 0px 10px 25px;
+  @include media-breakpoint-up(lg) {
+    padding: 40px 0px 10px 70px;
+  }
+}
+
+// ===============================================================
+
+#hero {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 95% bottom;
+
+  .boxes-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .boxes-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .main-img-wrapper {
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      right: -95px;
+      bottom: 0px;
+    }
+  }
+}
+
+// ===============================================================
+
+#cta {
+  position: relative;
+  h3 {
+    font-size: 21px !important;
+    font-weight: bold !important;
+  }
+
+  .btn {
+    margin: 0px 25px 10px 0px;
+    text-transform: none !important;
+  }
+
+  .boxes-footer {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  }
+}
+
+// ===============================================================
+
+#footer {
+  @include media-breakpoint-up(xl) {
+    padding: 40px 0px 10px 70px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .social-media-icons-wrapper {
+    a {
+      display: inline-block;
+      margin-right: 15px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .copy {
+    font-weight: 300 !important;
+  }
+}

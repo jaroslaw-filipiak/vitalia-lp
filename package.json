@@ -1,0 +1,16 @@
+{
+  "name": "vitalia",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.45.1",
+    "vite": "^2.7.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
